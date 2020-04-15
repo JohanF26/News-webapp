@@ -1,0 +1,51 @@
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head> -->
+
+<!-- <div class="header" style=" padding: 40px; color: white; background: turquoise;">
+    <div class="row">
+        <h3 style="padding: 10px;">Update 24x7</h3>
+        <a class="btn btn-outline-primary" style="background: white" [routerLink]="['/login']">Login</a>
+    </div>
+</div>
+
+<hr /> -->
+
+<div *ngIf="userPassErr !== ''" class="alert alert-danger">
+    <div>{{ userPassErr }}</div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h3>Register</h3>
+        <form (submit)="handleSubmit()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter Name" [(ngModel)]="name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter Email" [(ngModel)]="email">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password" [(ngModel)]="password">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" placeholder="Confirm Password" [(ngModel)]="confirmPassword">
+            </div>
+
+            <div>
+                <button class="btn btn-primary">Register</button>
+                <button type="button" class="btn btn-warning ml-2">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>

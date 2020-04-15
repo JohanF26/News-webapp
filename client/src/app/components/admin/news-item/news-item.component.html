@@ -1,0 +1,6 @@
+<span>{{ nItem.title }}</span> <br>
+<span>{{ nItem.description }}</span> <br>
+<span>{{ nItem.pubDate }}</span> <br>
+
+<button [routerLink]="['/user', nItem.id]" class="btn btn-info float-left mr-2">Edit</button>
+<button class="btn btn-danger float-right" (click)="handleDelete()">DELETE</button>

@@ -1,0 +1,47 @@
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head> -->
+
+<!-- <div class="row">
+    <div class="col" style="background: turquoise;">
+        <app-admin-header></app-admin-header>
+    </div>
+</div> -->
+
+<!-- <form (submit)="handleSubmit()"> -->
+    <div class="form-group">
+        <label for="title">Title</label>
+        <!-- <input type="text" id="title" class="form-control" placeholder="{{news.title}}" name="title" [(ngModel)]="title"> -->
+        <input type="text" id="title" class="form-control" name="title" [(ngModel)]="article.title">
+    </div>
+
+    <div class="form-group">
+        <label for="description">Description</label>
+        <!-- <input type="description" id="description" class="form-control" placeholder="{{news.description}}" name="description" [(ngModel)]="description"> -->
+        <input type="description" id="description" class="form-control" name="description" [(ngModel)]="article.description">
+    </div>
+
+    <div class="form-group">
+        <label for="url">Url</label>
+        <!-- <input type="text" id="url" class="form-control" placeholder="{{news.url}}" name="url" [(ngModel)]="url"> -->
+        <input type="text" id="url" class="form-control" name="url" [(ngModel)]="article.url">
+    </div>
+
+    <div class="form-group">
+        <label for="imageURL">Url to Image</label>
+        <!-- <input type="text" id="imageURL" class="form-control" placeholder="{{news.imageURL}}" name="imageURL" [(ngModel)]="imageURL"> -->
+        <input type="text" id="imageURL" class="form-control" name="imageURL" [(ngModel)]="article.imageUrl">
+    </div>
+
+    <div class="form-group">
+        <label for="pubDate">Published At</label>
+        <!-- <input type="text" id="pubDate" class="form-control" placeholder="{{news.pubDate}}" name="pubDate" [(ngModel)]="pubDate"> -->
+        <input type="date" id="pubDate" class="form-control" name="published" [(ngModel)]="published">
+    </div>
+
+    <!-- <button class="btn btn-primary">Confirm Changes</button> -->
+    <!-- <button class="btn btn-danger float-right" (click)="goBack()">Go Back</button> -->
+    <!-- <button class="btn btn-danger float-right">Reset</button> -->
