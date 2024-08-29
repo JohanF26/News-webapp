@@ -1,3 +1,4 @@
+# News Management Web App
 News management webapp with user authentication, allowing users to view news articles and administrators to manage (add, edit, delete) news items. The application is structured following Angular best practices, with separate components, services, and models. The backend provides API endpoints for user management and article operations, with authentication middleware to secure certain routes.
 
 1. Frontend (Client):
